@@ -1,15 +1,15 @@
-public class Student {
+public class student {
     // Data members (attributes)
     int rollNo;
     String name;
     double marks;
 
     // Default constructor
-    public Student() {
+    public student() {
     }
 
     // Parameterized constructor to initialize objects
-    public Student(int rollNo, String name, double marks) {
+    public student(int rollNo, String name, double marks) {
         this.rollNo = rollNo;
         this.name = name;
         this.marks = marks;
@@ -25,16 +25,16 @@ public class Student {
 
     public static void main(String[] args) {
         // Method 1: Initializing using a parameterized constructor
-        Student s1 = new Student(101, "Aarav", 89.5);
+        student s1 = new student(101, "Aarav", 89.5);
 
         // Method 2: Assigning values directly via reference variable
-        Student s2 = new Student();
+        student s2 = new student();
         s2.rollNo = 102;
         s2.name = "Diya";
         s2.marks = 94.0;
 
         // Method 3: Another object with different values
-        Student s3 = new Student(103, "Rohan", 76.5);
+        student s3 = new student(103, "Rohan", 76.5);
 
         // Displaying details of all student objects
         System.out.println("========== Student Details ==========");
